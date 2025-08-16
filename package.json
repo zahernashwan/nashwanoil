@@ -1,0 +1,19 @@
+{
+  "name": "nashwan-site",
+  "version": "1.0.0",
+  "description": "NASHWAN corporate website - bilingual professional site",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "lite-server",
+    "clean": "rimraf dist",
+    "build:css": "postcss assets/css/style.css -o dist/style.css",
+    "build": "npm run clean && npm run build:css && echo 'Build complete!'"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "lite-server": "^2.6.1",
+    "postcss": "^8.4.31",
+    "rimraf": "^5.0.10"
+  }
+}

@@ -1,0 +1,415 @@
+/* ==========================================================================
+   NASHWAN – Global Styles (Bootstrap friendly)
+   File: assets/css/style.css
+   ========================================================================== */
+
+/* -------------------------
+   0) Root & Reset
+------------------------- */
+:root {
+  --brand: #f2b700;
+  --brand-600: #e6ad00;
+  --brand-700: #b88d00;
+  --ink: #0f172a; /* Headings / main text */
+  --muted: #475569; /* Secondary text */
+  --line: #e5e7eb; /* Borders */
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --shadow-sm: 0 8px 22px rgba(2, 8, 23, 0.06);
+  --shadow-md: 0 14px 38px rgba(2, 8, 23, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography helpers */
+.fw-extrabold {
+  font-weight: 800;
+}
+.opacity-85 {
+  opacity: 0.85;
+}
+.opacity-90 {
+  opacity: 0.9;
+}
+
+/* Links */
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -------------------------
+   1) Navbar
+------------------------- */
+.site-navbar {
+  backdrop-filter: saturate(1.4) blur(6px);
+}
+.site-navbar .navbar-brand {
+  padding-block: 0.5rem;
+}
+.brand-mark {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.brand-wordmark {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.main-nav .nav-link {
+  font-weight: 600;
+  color: #222;
+  padding: 0.7rem 0.95rem;
+  position: relative;
+  transition: color 0.15s ease;
+}
+.main-nav .nav-link:hover {
+  color: #000;
+}
+.main-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  right: 0.8rem;
+  bottom: 0.35rem;
+  height: 2px;
+  background: transparent;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.main-nav .nav-link:hover::after,
+.main-nav .nav-link.active::after {
+  background: var(--brand);
+  transform: scaleX(1);
+}
+
+/* Primary CTA */
+.btn-brand {
+  background: var(--brand);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 0.65rem;
+  box-shadow: 0 8px 22px rgba(242, 183, 0, 0.22);
+}
+.btn-brand:hover {
+  background: var(--brand-700);
+  color: #000;
+}
+.btn-outline-dark {
+  border-radius: 0.6rem;
+}
+
+/* -------------------------
+   2) Hero / Page Hero
+------------------------- */
+.hero {
+  min-height: 78vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)),
+    url("../img/hero-home.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.page-hero {
+  min-height: 260px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)),
+    url("../img/hero-generic.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.text-shadow {
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+.text-shadow-sm {
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* -------------------------
+   3) Sections & Titles
+------------------------- */
+.section {
+  padding: 64px 0;
+}
+.section-sm {
+  padding: 42px 0;
+}
+.section-title {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 4px;
+  background: var(--brand);
+  border-radius: 3px;
+  margin: 0.65rem auto 0;
+}
+
+/* -------------------------
+   4) Value Props (Home)
+------------------------- */
+.value-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .value-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.v-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.v-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.v-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0 6px;
+}
+.v-card p {
+  color: #64748b;
+  margin: 0;
+}
+.v-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------
+   5) Brands Strip
+------------------------- */
+.brand-strip {
+  display: grid;
+  gap: 22px;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 576px) {
+  .brand-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .brand-strip {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.brand-item {
+  max-height: 46px;
+  object-fit: contain;
+  justify-self: center;
+  filter: grayscale(10%);
+  opacity: 0.95;
+  transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+.brand-item:hover {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* -------------------------
+   6) Product Cards Grid
+------------------------- */
+.card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-card {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.p-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.p-card h3 {
+  font-size: 18px;
+  margin: 10px 0 6px;
+  font-weight: 800;
+}
+.p-card p {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------
+   7) About – Stats
+------------------------- */
+.stats-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+/* -------------------------
+   8) Forms (Contact)
+------------------------- */
+.form-control,
+.form-select {
+  border-radius: 0.6rem;
+  border: 1px solid var(--line);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(242, 183, 0, 0.2);
+}
+label.form-label {
+  font-weight: 600;
+}
+
+.map-embed {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.map-embed iframe {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+/* -------------------------
+   9) Footer
+------------------------- */
+footer {
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+/* -------------------------
+   10) Utilities
+------------------------- */
+.bg-soft {
+  background: var(--bg-soft);
+}
+.bordered {
+  border: 1px solid var(--line);
+}
+.rounded-xl {
+  border-radius: 14px;
+}
+
+/* -------------------------
+   11) Responsive refinements
+------------------------- */
+@media (min-width: 1200px) {
+  .brand-mark {
+    height: 52px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .main-nav .nav-link {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+/* -------------------------
+   12) Optional – subtle animations
+------------------------- */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – NASHWAN</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top site-navbar shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" alt="NASHWAN" class="brand-mark" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navEN">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navEN" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto main-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#quote" class="btn btn-brand ms-lg-3">Request a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero d-flex align-items-center text-white" style="background:
+    linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35)),
+    url('assets/img/hero-contact.jpg') center/cover;">
+        <div class="container">
+            <h1 class="fw-extrabold display-6 mb-1">Contact Us</h1>
+            <p class="lead opacity-85 mb-0">We’re ready. Let’s talk.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Form -->
+                <div class="col-lg-7">
+                    <div class="card p-3 p-md-4 shadow-sm" id="quote">
+                        <h2 class="h4 mb-3">Request a Quote</h2>
+                        <form action="#" method="post" onsubmit="return false;">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Company</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="Products / Specs / Quantity"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-brand">Send Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="col-lg-5">
+                    <div class="card p-3 p-md-4 shadow-sm">
+                        <h2 class="h4 mb-3">Contact Info</h2>
+                        <ul class="list-unstyled m-0">
+                            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i><strong>Head Office (U.A.E):</strong>
+                                Dubai, Deira</li>
+                            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i><strong>Yemen Branch:</strong> Sana’a,
+                                Taiz Street</li>
+                            <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@nashwanoil.com</li>
+                            <li class="mb-2"><i class="bi bi-telephone me-2"></i> +971 4 2216226</li>
+                            <li class="mb-2"><i class="bi bi-clock me-2"></i> Sat–Thu: 8:00–18:00</li>
+                        </ul>
+
+                        <hr class="my-3">
+
+                        <h3 class="h6 text-uppercase text-muted mb-2">Branches (Yemen)</h3>
+                        <ul class="small m-0 ps-3">
+                            <li>Main HQ – Taiz St., Sana’a</li>
+                            <li>Taiz St., Round 45 – Sana’a</li>
+                            <li>Amran Roundabout – Sana’a</li>
+                            <li>EMTOP – Taiz St., Sana’a</li>
+                        </ul>
+                        <a class="btn btn-outline-dark btn-sm mt-3" target="_blank" href="https://maps.google.com">Open
+                            in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center small text-muted border-top">
+        © 2025 NASHWAN. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
