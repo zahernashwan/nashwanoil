@@ -1,20 +1,36 @@
-# 🌐 Nashwan Oil & Gas Website
+# 🌐 NASHWAN Oil & Gas — Corporate Website
 
-Official corporate website for **Nashwan Oil & Gas** – providing professional services in energy, logistics, and trading.
+> موقع تعريفي احترافي لشركة **NASHWAN Oil & Gas** — حلول توريد ولوجستيات وتجـارة صناعية.  
+> Live: **https://zahernashwan.github.io/nashwanoil/**
 
-🔗 **Live Website:** [zahernashwan.github.io/nashwanoil](https://zahernashwan.github.io/nashwanoil/)
-
----
-
-## 📑 Features
-- Responsive bilingual corporate website
-- Professional design with HTML5, CSS3, and JavaScript
-- Easy navigation: Home, About, Products, Contact
-- Hosted on **GitHub Pages**
+[![Status](https://img.shields.io/badge/Status-Online-success?style=flat-square)](https://zahernashwan.github.io/nashwanoil/)
+[![Built with](https://img.shields.io/badge/Built%20with-HTML5%20|%20CSS3%20|%20JS-1f6feb?style=flat-square)](#tech-stack)
+[![Hosting](https://img.shields.io/badge/Hosting-GitHub%20Pages-222?style=flat-square)](https://pages.github.com/)
+[![License](https://img.shields.io/badge/License-Proprietary-important?style=flat-square)](#license)
 
 ---
 
-## 🚀 How to Use
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/zahernashwan/nashwanoil.git
+## ✨ Overview
+A clean, responsive corporate site featuring:
+- Clear navigation: **Home · About · Products · Contact**
+- Professional typography & brand colors
+- Mobile-first layout and accessible components
+- Deployed on **GitHub Pages** for fast, reliable hosting
+
+---
+
+## 🚀 Live Demo
+- **Production:** https://zahernashwan.github.io/nashwanoil/
+
+> Tip: If you push new changes to `main`, GitHub Pages will redeploy automatically within ~1–2 minutes.
+
+---
+
+## 🧱 Tech Stack
+- **Frontend:** HTML5, CSS3 (custom + Bootstrap utilities), vanilla JavaScript
+- **Build (optional):** PostCSS + Autoprefixer (already configured)
+- **Hosting:** GitHub Pages
+
+---
+
+## 📁 Project Structure
